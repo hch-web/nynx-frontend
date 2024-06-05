@@ -1,0 +1,87 @@
+.mainHeroContainer {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+
+  & .gridImageWrapper {
+    height: 100%;
+    display: block;
+    position: relative;
+
+    & .mainHeroImg {
+      position: absolute;
+      bottom: -80px;
+      right: 60px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainHeroContainer {
+    height: 500px;
+
+    & .gridImageWrapper {
+      & .mainHeroImg {
+        position: absolute;
+        max-width: 650px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .mainHeroContainer {
+    height: 450px;
+
+    & .gridImageWrapper {
+      & .mainHeroImg {
+        position: absolute;
+        max-width: 570px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .mainHeroContainer {
+    height: calc(500px - 78px);
+    margin-bottom: 20px;
+
+    & .gridImageWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & .mainHeroImg {
+        position: unset;
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 570px) {
+  .mainHeroContainer {
+    height: calc(40vh - 78px);
+    margin-bottom: 5%;
+
+    
+    & .gridImageWrapper {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .mainHeroContainer {
+    height: calc(40vh - 78px);
+    margin-bottom: 5%;
+
+    & .gridImageWrapper {
+      display: none;
+    }
+  }
+}

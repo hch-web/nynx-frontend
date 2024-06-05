@@ -1,0 +1,21 @@
+
+.sidebarContainer{
+    width: 80px;
+  }
+
+ .dashboardContainer {
+    width: calc(100% - 80px);
+  }
+
+  .profileCompleteAlert{
+    background-color: #FAC751;
+  }
+
+@media screen and (max-width: 810px)  {
+  .sidebarContainer{
+    width: 65px;
+  }
+  .dashboardContainer {
+    width: calc(100% - 65px);
+ }
+}

@@ -1,0 +1,83 @@
+.mainHeroContainer {
+  margin-bottom: 120px;
+
+  & .mainHeroImg {
+    position: absolute;
+    bottom: -80px;
+    right: 0px;
+  }
+}
+
+.contentSectionGrid {
+  & .contentSectionItem {
+    position: relative;
+
+    & .stepCountNum {
+      position: absolute;
+      top: -72px;
+      // top: -11%;
+      font-size: 144px;
+      font-weight: 900;
+      opacity: 0.1;
+    }
+  }
+}
+
+.timeBasedhiring {
+  & .countingWrapper {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainHeroContainer {
+    height: 550px;
+    & .mainHeroImg {
+      position: absolute;
+      max-width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .mainHeroContainer {
+    height: calc(550px - 50px);
+
+    & .mainHeroImg {
+      position: unset;
+      max-width: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .mainHeroContainer {
+    height: calc(500px - 78px);
+    margin-bottom: 20px;
+
+    & .mainHeroImg {
+      position: unset;
+      max-width: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 570px) {
+  .mainHeroContainer {
+    height: calc(40vh - 78px);
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .mainHeroContainer {
+    height: calc(40vh - 78px);
+    margin-bottom: 5%;
+  }
+}

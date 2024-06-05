@@ -1,0 +1,269 @@
+.dashboardNavbar {
+  height: 76px;
+
+  & .NavbarImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+.clientNotifications {
+  & .onlineIcon {
+    font-size: 12px;
+    color: #50cd89;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1px;
+    position: relative;
+    bottom: 18px;
+  }
+
+  & .notificationMessage {
+    color: #a0919b;
+    font-size: 16px;
+  }
+
+  & .notificationTime {
+    color: #a0919b;
+    font-size: 14px;
+  }
+}
+
+.activeNavLinkLight {
+  color: #fac751;
+  border-bottom: 2px solid #fac751;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: #fac751;
+    border-bottom: 2px solid #fac751;
+    font-weight: 500;
+  }
+}
+
+.activeNavLinkDark {
+  color: #422438;
+  border-bottom: 2px solid #422438;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: #422438;
+    border-bottom: 2px solid #422438;
+    font-weight: 500;
+  }
+}
+
+.navbarNavItemLight {
+  color: #fff2d0;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: #fff2d0;
+    border-bottom: 2px solid #fff2d0;
+  }
+}
+
+.navbar-nav-item-dark {
+  color: #422438;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: #a23842;
+    border-bottom: 2px solid #a23842;
+  }
+}
+
+.navToggleButton {
+  cursor: pointer;
+}
+
+.drawerLink {
+  color: #fff2d0;
+
+  &:hover {
+    color: #fac751;
+  }
+}
+
+.drawerSearchFieldBox {
+  position: relative;
+
+  & .searchIconLight {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    color: white;
+  }
+
+  & .drawerSearchField {
+    padding: 5px 15px 5px 35px;
+    background: rgba(113, 113, 113, 0.3);
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .drawerSearchFieldLight {
+    background: rgba(113, 113, 113, 0.3);
+    color: #ffffff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+.searchFieldBox {
+  position: relative;
+
+  & .inputSearchIcon {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    cursor: pointer;
+
+    &.searchIconLight {
+      color: white;
+    }
+
+    &.searchIconDark {
+      color: rgb(66, 66, 66);
+    }
+  }
+
+  & .customSearchField {
+    padding: 5px 15px 5px 55px;
+    background: rgba(113, 113, 113, 0.3);
+    border: none;
+    border-radius: 25px;
+    width: 20vw;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .customSearchFieldLight {
+    background: rgba(113, 113, 113, 0.3);
+    color: #ffffff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  & .customSearchFieldDark {
+    background: rgba(113, 113, 113, 0.3);
+    color: #000000;
+
+    &::placeholder {
+      color: rgba(97, 97, 97, 0.8);
+    }
+  }
+}
+
+.notifications {
+  & .notificationsMessage {
+    font-weight: normal !important;
+    color: #a0919b;
+  }
+
+  & .notificationsSimpleMessage {
+    font-weight: normal;
+    color: #a0919b;
+  }
+}
+
+  .notification-icon {
+    background: #553947;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+   .onlineIcon {
+    font-size: 12px !important;
+    color: #50cd89;
+    background: #371e2f;
+    border-radius: 50%;
+    padding: 1px;
+    position: absolute;
+    top: 57px;
+  }
+
+   .avatarOnlineIcon {
+    font-size: 12px !important;
+    color: #50cd89;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+    .avatarOfflineIcon {
+    font-size: 12px !important;
+    color: #e3dee1;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+   .profileOnlineIcon {
+    font-size: 12px !important;
+    color: #50cd89;
+    background: #371e2f;
+    border-radius: 50%;
+    padding: 1px;
+    position: absolute;
+    top: 47px;
+  }
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 25vw;
+    }
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 60vw;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 50vw;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .sidebarMenu {
+    height: 64px;
+  }
+}

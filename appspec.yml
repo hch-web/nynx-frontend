@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+
+files:
+  - source: ./
+    destination: /opt/nynx-frontend
+
+hooks:
+  AfterInstall:
+    - location: scripts/install_dependencies.sh
+      runas: ssm-user
+  ApplicationStart:
+    - location: scripts/start.sh
+      runas: ssm-user
+  ApplicationStop:
+    - location: scripts/stop.sh
+      runas: ssm-user
+

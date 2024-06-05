@@ -1,0 +1,124 @@
+.sidebarMenu {
+  height: calc(100vh - 76px);
+
+  position: sticky;
+  top: 76px;
+  z-index: 1;
+
+  & .listContainer {
+    height: 100%;
+    width: 100%;
+  }
+
+  & .iconButton {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .activeButton {
+    border-radius: 50%;
+    background-color: #fff2d0;
+  }
+
+  & .icon-button:active {
+    background-color: #fff2d0;
+  }
+
+  & .icon-button:hover {
+    background-color: #fff2d0;
+  }
+
+  & .lock:hover .icon-unlock,
+  .lock .icon-lock {
+    display: none;
+  }
+  & .lock:hover .icon-lock {
+    display: inline;
+  }
+
+  & .tab-link.tab-link-active .tabbar-icon1 {
+    display: none;
+  }
+  & .tab-link .tabbar-icon2 {
+    display: none;
+  }
+  & .tab-link.tab-link-active .tabbar-icon2 {
+    display: block;
+  }
+
+  @media screen and (max-width: 1150px) and (min-width: 810px) {
+    .list-container {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 810px) {
+    .listContainer {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .sidebarMenu {
+    height: calc(100vh - 64px);
+    position: sticky;
+    top: 64px;
+    z-index: 1;
+  }
+}
+.activeIconBody {
+  width: 60px;
+  height: 60px;
+  background-color: #fff2d0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.unActiveIconBody {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.unActiveIconBody:hover {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background-color: #4a323e;
+}
+
+.freelancerUnActiveIconBody {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.freelancerUnActiveIconBody:hover {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background-color: #1a3450;
+}

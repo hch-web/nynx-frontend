@@ -1,0 +1,8 @@
+.inputField {
+  border: none;
+  
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}

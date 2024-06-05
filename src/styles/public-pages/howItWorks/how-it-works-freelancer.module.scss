@@ -1,0 +1,92 @@
+.mainContainer {
+  margin-bottom: 80px;
+
+  & .imgWrapper {
+    & .heroImg {
+      position: absolute !important;
+      bottom: -100px;
+      right: 0;
+      width: 100%;
+      max-width: 700px;
+    }
+  }
+}
+
+.communityContainer {
+  & .freelanceProfileImg {
+    max-width: 70px;
+  }
+}
+
+.freelancerCardStyles {
+  & .slickSlide {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainContainer {
+    height: 500px;
+
+    & .imgWrapper {
+      & .heroImg {
+        position: absolute;
+        max-width: 700px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .mainContainer {
+    height: calc(550px - 78px);
+    & .imgWrapper {
+      & .heroImg {
+        position: unset;
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .mainContainer {
+    height: calc(500px - 78px);
+    margin-bottom: 80px;
+
+    & .imgWrapper {
+      align-items: center;
+      justify-content: center;
+
+      & .heroImg {
+        position: unset;
+        // width: 100%;
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 570px) {
+  .mainContainer {
+    height: calc(40vh - 78px);
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .mainContainer {
+    height: calc(40vh - 78px);
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 1950px) {
+  .mainContainer {
+    padding: 70px;
+
+    & .mainContainerText {
+      padding: 0px !important;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.leftPanel {
+  display: flex;
+
+  & .leftPaneImage {
+    position: absolute;
+    bottom: 5px;
+  }
+
+  & .signup-image {
+    width: 90%;
+    max-width: 380px;
+  }
+
+  & .heading {
+    font-size: 30px;
+  }
+
+  & .subHeading {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .leftPanel {
+    & .loginImage {
+      width: 30vw;
+    }
+
+    & .subHeading {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .leftPanel {
+    & .leftPaneImage {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+  .leftPanel {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .leftPanel {
+    display: none !important;
+  }
+}

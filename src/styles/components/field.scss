@@ -1,0 +1,48 @@
+.field-form-group {
+  width: 100%;
+  position: relative;
+
+  & .show-hide-icon {
+    position: absolute;
+    right: 10px;
+    top: 1rem;
+    cursor: pointer;
+  }
+
+  & .show-hide-text {
+    font-size: 14px;
+  }
+
+  & .custom-text-field {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 13px 23px;
+    width: 100%;
+    background: none;
+
+    &:focus {
+      border-color: #e3d6d1 !important;
+      outline: none;
+      box-shadow: 0px 0px 5px #cfcfcf;
+    }
+  }
+
+  & .custom-password-field {
+    border: 1px solid;
+    // border: 1px solid #e3d6d1;
+    border-radius: 10px;
+    padding: 13px 23px;
+    width: 100%;
+    background: none;
+
+    &:focus {
+      border-color: #e3d6d1 !important;
+      outline: none;
+      box-shadow: 0px 0px 5px #cfcfcf;
+    }
+  }
+}
+
+.field-error {
+  font-size: 13px;
+}

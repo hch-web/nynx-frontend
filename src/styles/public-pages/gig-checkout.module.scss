@@ -1,0 +1,31 @@
+.gigImage {
+  width: 70px;
+  border-radius: 5px;
+}
+
+.orderGridItemBox {
+  max-height: 600px;
+  overflow-y: auto;
+  height: auto;
+  transition: 0.3s;
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: rgb(211, 211, 211, 1);
+      transition: 0.3s;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(211, 211, 211, 0.4);
+    border-radius: 10px;
+  }
+}

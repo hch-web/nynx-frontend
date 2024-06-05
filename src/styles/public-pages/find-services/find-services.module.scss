@@ -1,0 +1,87 @@
+.mainHeroContainer {
+  margin-bottom: 80px;
+
+  & .gridImgItemWrapper {
+    & .mainHeroImg {
+      position: absolute;
+      bottom: -80px;
+      right: 60px;
+    }
+  }
+}
+
+.find-services-slider-container {
+  & .slick-slide {
+    padding: 5px 0;
+
+    &.slick-active.slick-current {
+      & .MuiCard-root {
+        box-shadow: 1px 1px 5px 1px darkgrey;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainHeroContainer {
+    height: 500px;
+
+    & .gridImgItemWrapper {
+      & .mainHeroImg {
+        position: absolute;
+        max-width: 650px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .mainHeroContainer {
+    height: 450px;
+
+    & .gridImgItemWrapper {
+      & .mainHeroImg {
+        position: absolute;
+        max-width: 570px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .mainHeroContainer {
+    height: calc(500px - 78px);
+    margin-bottom: 20px;
+
+    & .gridImgItemWrapper {
+      align-items: center;
+      justify-content: center;
+
+      & .mainHeroImg {
+        position: unset;
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 570px) {
+  .mainHeroContainer {
+    height: calc(40vh - 78px);
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .mainHeroContainer {
+    height: calc(40vh - 78px);
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 1950px) {
+  .desktopResponsiveSlider {
+    padding: 0 70px !important;
+  }
+}

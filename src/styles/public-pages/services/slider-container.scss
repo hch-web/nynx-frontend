@@ -1,0 +1,11 @@
+.findServicesSliderContainer {
+  & .slick-slide {
+    padding: 5px 0;
+
+    &.slick-active.slick-current {
+      & .MuiCard-root {
+        box-shadow: 1px 1px 5px 1px darkgrey;
+      }
+    }
+  }
+}

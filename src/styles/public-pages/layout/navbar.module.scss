@@ -1,0 +1,261 @@
+@import '../colors.scss';
+
+.dashboard-navbar {
+  & .notification-icon {
+    background: #553947;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  & .online-icon {
+    font-size: 12px;
+    color: #50cd89;
+    background: #371e2f;
+    border-radius: 50%;
+    padding: 1px;
+    position: absolute;
+    top: 47px;
+  }
+}
+
+.client-notifications {
+  & .online-icon {
+    font-size: 12px;
+    color: #50cd89;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1px;
+    position: relative;
+    bottom: 18px;
+  }
+
+  & .notification-message {
+    color: #a0919b;
+    font-size: 16px;
+  }
+
+  & .notification-time {
+    color: #a0919b;
+    font-size: 14px;
+  }
+}
+
+.activeNavLinkLight {
+  color: $yellow;
+  border-bottom: 2px solid $yellow;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: $yellow;
+    border-bottom: 2px solid $yellow;
+    font-weight: 500;
+  }
+}
+
+.activeNavLinkDark {
+  color: $darkPurple;
+  border-bottom: 2px solid $darkPurple;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: $darkPurple;
+    border-bottom: 2px solid $darkPurple;
+    font-weight: 500;
+  }
+}
+
+.navbarNavItemLight {
+  color: $lightYellow;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $lightYellowHover;
+    border-bottom: 2px solid $lightYellowHover;
+  }
+}
+
+.navbarNavItemDark {
+  color: $darkPurple;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $red;
+    border-bottom: 2px solid $red;
+  }
+}
+
+.navToggleButton {
+  cursor: pointer;
+}
+
+.drawerLink {
+  color: $lightYellow;
+
+  &:hover {
+    color: $yellow;
+    // border-bottom: 1px solid $lightYellowHover;
+  }
+}
+
+.drawerSearchFieldBox {
+  position: relative;
+
+  & .searchIconLight {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    color: white;
+  }
+
+  & .drawerSearchField {
+    padding: 5px 15px 5px 35px;
+    background: rgba(113, 113, 113, 0.3);
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .drawerSearchFieldLight {
+    background: rgba(113, 113, 113, 0.3);
+    color: #ffffff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+.searchFieldBox {
+  position: relative;
+
+  & .inputSearchIcon {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .searchIconLight {
+    color: white;
+  }
+
+  .searchIconDark {
+    color: rgb(66, 66, 66);
+  }
+
+  & .customSearchField {
+    padding: 5px 15px 5px 55px;
+    background: rgba(113, 113, 113, 0.3);
+    border: none;
+    border-radius: 25px;
+    width: 20vw;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .customSearchFieldLight {
+    background: rgba(113, 113, 113, 0.3);
+    color: #ffffff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  & .customSearchFieldDark {
+    background: rgba(113, 113, 113, 0.3);
+    color: #000000;
+
+    &::placeholder {
+      color: rgba(97, 97, 97, 0.8);
+    }
+  }
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+}
+
+.navAlertColor {
+  background: #FAC751;
+}
+
+@media screen and (min-width: 1950px) and (max-width:2250px) {
+  .navLink {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1750px) and (max-width: 1950px) {
+  .navLink {
+    width: 45vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 25vw;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 20vw;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 25vw;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 25vw;
+    }
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 768px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 60vw;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .searchFieldBox {
+    & .customSearchField {
+      width: 50vw;
+    }
+  }
+}
